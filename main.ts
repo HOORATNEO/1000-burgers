@@ -124,7 +124,7 @@ fireball = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-controller.moveSprite(fireball)
+controller.moveSprite(fireball, 50, 100)
 fireball.setStayInScreen(true)
 game.setGameOverPlayable(false, music.melodyPlayable(music.bigCrash), false)
 game.setGameOverPlayable(true, music.melodyPlayable(music.powerUp), false)
