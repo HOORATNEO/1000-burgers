@@ -1,5 +1,6 @@
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Food, function (sprite, otherSprite) {
     sprites.destroy(otherSprite, effects.ashes, 100)
+    info.changeScoreBy(1)
     info.changeLifeBy(1)
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
